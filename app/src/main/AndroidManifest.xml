@@ -15,6 +15,9 @@
             android:name=".UserActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".ResourceActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

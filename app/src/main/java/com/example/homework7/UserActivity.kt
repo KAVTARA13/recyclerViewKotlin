@@ -31,12 +31,8 @@ class UserActivity: AppCompatActivity()  {
         email = findViewById(R.id.email)
         image = findViewById(R.id.image)
         back = findViewById(R.id.back)
-        Log.d("UserDataById","chaitvirta")
         val intent = intent
         val id = intent.getLongExtra("id",0)
-        if (id != null) {
-            Log.d("intent", id.toString())
-        }
         if (id != null) {
             RestClient.getReqResApi.getUserById(id.toInt()).enqueue(object :retrofit2.Callback<ReqResData<User>>{
 
